@@ -3,26 +3,7 @@ Information about the SWC file specification
 
 ## Specification of standard SWC - adpated from (3)
 
-An SWC file (S.W.C. encodes for the last names of its initial designers Ed Stockley, Howard Wheal, and Robert Cannon) is a text file that starts with a header section in which each line starts with the symbol #. Some SWC-variants use this section to store information about the data in an orderly fashion, others treat is as a free-text field. According to the original publication (4) that introduced SWC, the header contains the following prescribed fields:
-
-Field | Description 
---- | --- 
-ORIGINAL_SOURCE | File type delivered by digitisation equipment 
-CREATURE | Species from which the cell came
-REGION | Brain region
-FIELD/LAYER | Location within region 
-TYPE| Cell type 
-CONTRIBUTOR | Name, initials, organisation, e.g. Turner DA, Duke
-REFERENCE | Where the data has been published
-RAW | File name of original data
-EXTRAS | Files containing further information on this cell
-SOMA_AREA | Area of some (in mm2)
-SHRINKAGE_CORRECTION | x, y and z correction factors
-VERSION_NUMBER | To identify different versions of the same raw data
-VERSION_DATE | Date this version was created (yyyy-mm-dd)
-SCALE | Used internally to record applied shrinkage corrections
-
-However, these fields are not present in the NeuroMorpho.org SWC format and therefore cannot be considered a required component of SWC.
+An SWC file (S.W.C. encodes for the last names of its initial designers Ed Stockley, Howard Wheal, and Robert Cannon) is a text file that starts with a header section in which each line starts with the symbol #. Some SWC-variants use this section to store information about the data in an orderly fashion, others treat is as a free-text field.
 
 Below the header section, a points matrix with 7 columns follows. It contains the points traced along the neuronal tree. The seven numbers in each row are separated by spaces, and have the following meaning:
 
@@ -113,6 +94,28 @@ neuron_tree = node newline {node newline} ;
 
 SWC = [header] neuron_tree ;
 
+## Header fields defined in Cannon et al 1998
+
+According to the original publication (4) that introduced SWC, the header contains the following prescribed fields:
+
+Field | Description 
+--- | --- 
+ORIGINAL_SOURCE | File type delivered by digitisation equipment 
+CREATURE | Species from which the cell came
+REGION | Brain region
+FIELD/LAYER | Location within region 
+TYPE| Cell type 
+CONTRIBUTOR | Name, initials, organisation, e.g. Turner DA, Duke
+REFERENCE | Where the data has been published
+RAW | File name of original data
+EXTRAS | Files containing further information on this cell
+SOMA_AREA | Area of some (in mm2)
+SHRINKAGE_CORRECTION | x, y and z correction factors
+VERSION_NUMBER | To identify different versions of the same raw data
+VERSION_DATE | Date this version was created (yyyy-mm-dd)
+SCALE | Used internally to record applied shrinkage corrections
+
+However, these fields are not present in the NeuroMorpho.org SWC format and therefore cannot be considered a required component of SWC.
 
 ## References
 1. Ascoli GA, Krichmar JL, Nasuto SJ, Senft SL. Generation, description and storage of dendritic morphology data. Philos Trans R Soc Lond B Biol Sci. 2001;356(1412):1131-1145. doi:10.1098/rstb.2001.0905 ([PMCID: PMC1088507](https://www.ncbi.nlm.nih.gov/sites/ppmc/articles/PMC1088507/))
