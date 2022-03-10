@@ -28,13 +28,13 @@ Below the header section, a points matrix with 7 columns follows. It contains th
 
 Column index | Field | Description
 --- | --- | ---
-1 | SampleID | Sample identifier. A positive integer.
-2 | TypeID | Type identifier
-3 | x | X-position in micrometers
-4 | y | Y-position in micrometers
-5 | z | Z-position in micrometers
-6 | r | Radius in micrometers (half the cylinder thickness)
-7 | ParentID | Parent sample identifier.
+1 | Index | Sample identifier. A positive integer.
+2 | Type | Type identifier
+3 | X | X-position in micrometers
+4 | Y | Y-position in micrometers
+5 | Z | Z-position in micrometers
+6 | R | Radius in micrometers (half the cylinder thickness)
+7 | Parent | Parent sample identifier.
 
 The basic set of types used in NeuroMorpho.org SWC files are: 
 TypeID | Description 
@@ -61,11 +61,11 @@ Parent defines how points are connected to each other. In a tree, multiple point
 
 This extremely simplified neuronal structure was obtained by extensive pruning of a dentate gyrus granule cell in (4). The left panel shows the digital SWC representation:
 every cylindrical compartment is described by a row containing:
-- A label (ID or SampleID, the same numbers reported next to the branches in the right panel
-- A tag (T or TypeID, 1 for soma, 3 for dendrite),
-- Cartesion positions (x,y,z in micrometers), 
-- Radius (r) and 
-- Connectivity (C or ParentID, representing the label of parent, -1 indicates no parent)
+- A label (ID or Index, the same numbers reported next to the branches in the right panel
+- A tag (T or Type, 1 for soma, 3 for dendrite),
+- Cartesion positions (X,Y,Z in micrometers), 
+- Radius (R) and 
+- Connectivity (C or Parent, representing the label of parent, -1 indicates no parent)
 
 ## Syntax of basic SWC reconstruction in [EBNF](https://en.wikipedia.org/wiki/Extended_Backus%E2%80%93Naur_form) - adapted from Nanda et al, 2018
 
