@@ -67,7 +67,7 @@ every cylindrical compartment is described by a row containing:
 - Radius (r) and 
 - Connectivity (C or ParentID, representing the label of parent, -1 indicates no parent)
 
-## Syntax of basic SWC reconstruction in EBNF - adapted from Nanda et al, 2018
+## Syntax of basic SWC reconstruction in [EBNF](https://en.wikipedia.org/wiki/Extended_Backus%E2%80%93Naur_form) - adapted from Nanda et al, 2018
 
 newline = "\n" ; 
 
