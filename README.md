@@ -26,13 +26,9 @@ TypeID | Description
  2  | axon
  3  | (basal) dendrite
  4  | apical dendrite
- 5+ | custom
- 
-In addition, some SWC-variants use the following types 5 and 6:
-TypeID | Description 
---- | --- 
-5 | branch point (redundant: branch is a point with multiple children)
-6 | end point (redundant: end point is a point with zero children)
+ 5 | custom
+ 6 | unspecified neurite
+ 7 | glia processes
 
 Parent defines how points are connected to each other. In a tree, multiple points can have the same ParentID. The first point in the file must have a ParentID equal to -1, which represents the root point. Parent samples must be defined before they are being referred to. By counting how many points refer to the a given parent, the number of its children can be computed.
 
