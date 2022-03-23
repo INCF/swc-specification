@@ -122,3 +122,9 @@ SCALE | Used internally to record applied shrinkage corrections
 4. Cannon RC, Turner DA, Pyapali GK, Wheal HV. An on-line archive of reconstructed hippocampal neurons. Journal of Neuroscience Methods. 1998 Oct;84(1-2):49-54. DOI: 10.1016/s0165-0270(98)00091-0. [PMID: 9821633](https://europepmc.org/article/MED/9821633).
 5. https://en.wikipedia.org/wiki/Extended_Backus%E2%80%93Naur_form
 6. http://neuromorpho.org/SomaFormat.html Soma format representation in NeuroMorpho.Org as of version 5.3
+
+## Contributors
+- Lydia Ng
+- Giorgio Ascoli
+- Bengt Ljungquist
+- Sumit Nanda
