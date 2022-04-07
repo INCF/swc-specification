@@ -20,7 +20,6 @@ Column index | Field | Description
 The basic set of types used in NeuroMorpho.org SWC files are: 
 TypeID | Description 
 --- | --- 
--1 | root
  0  | undefined
  1  | soma
  2  | axon
