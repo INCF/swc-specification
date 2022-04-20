@@ -39,7 +39,7 @@ The soma in SWC can consist of a single root point or multiple points, the first
 ![image](https://user-images.githubusercontent.com/8552673/157725540-a49e8ab7-e930-401c-938b-713dd093dc2c.png)
 
 This extremely simplified neuronal structure was obtained by extensive pruning of a dentate gyrus granule cell in (4). The left panel shows the digital SWC representation:
-every cylindrical compartment is described by a row containing:
+every node compartment is described by a row containing:
 - A label (ID or Index, the same numbers reported next to the branches in the right panel
 - A tag (T or Type, 1 for soma, 3 for dendrite),
 - Cartesion positions (X,Y,Z in micrometers), 
