@@ -9,12 +9,12 @@ Below the header section, a points matrix with 7 columns follows. It contains th
 
 Column index | Field | Description
 --- | --- | ---
-1 | Index | Sample identifier. A squential positive integer.
+1 | Index | Sample identifier. A sequential positive integer.
 2 | Type | Type identifier. A positive integer.
 3 | X | X-position in micrometers
 4 | Y | Y-position in micrometers
 5 | Z | Z-position in micrometers
-6 | R | Radius in micrometers (half the cylinder thickness)
+6 | R | Radius in micrometers (half the node thickness)
 7 | Parent | Parent sample identifier.
 
 The basic set of types used in NeuroMorpho.org SWC files are: 
@@ -32,7 +32,7 @@ TypeID | Description
 Parent defines how points are connected to each other. In a tree, multiple points can have the same ParentID. The first point in the file must have a ParentID equal to -1, which represents the root point. Parent samples must be defined before they are being referred to. By counting how many points refer to the a given parent, the number of its children can be computed.
 
 ## Soma representation 
-The soma in SWC can consist of a single root point or multiple points, the first of which is the root. The single-point representation approximates the soma as a sphere of radius R and centered in X, Y, Z. The multi-point representation approximates the soma as a sequence of cylinders akin to a neurite branch. Note that representing the soma as a contour tracing of the soma perimeter or a series of contour tracings approximating the soma surface is not consistent with the SWC standard.
+The soma in SWC can consist of a single root point or multiple points, the first of which is the root. The single-point representation approximates the soma as a sphere of radius R and centered in X, Y, Z. The multi-point representation approximates the soma as a sequence of nodes akin to a neurite branch. Note that representing the soma as a contour tracing of the soma perimeter or a series of contour tracings approximating the soma surface is not consistent with the SWC standard.
 
 ## SWC Example - adapted from Ascoli et al, 2001
 
