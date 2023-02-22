@@ -18,6 +18,8 @@ The SWC format governing board has five members:
 | **5. INCF advisor**
 | \ :sup:`An advisor affiliated with and appointed by INCF that can provide an international perspective and broad community feedback to the development of the format.`\
 
+Until the first election has taken place, the governing board will consist of Giorgio A. Ascoli, Bengt Ljungquist, Sumit Nanda, and Lydia Ng, serving as interrim stewards. Appointment of fifth member by INCF pending. 
+
 .. _election:
 
 Governing board member election
