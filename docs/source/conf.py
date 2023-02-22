@@ -3,11 +3,11 @@
 # -- Project information
 
 project = 'SWC Specification'
-copyright = '2022, SWC Specification Governing Board'
+copyright = '2023, SWC Specification Governing Board'
 author = 'Bengt Ljungquist'
 
-release = '2.0'
-version = '2.0.0'
+release = '1.0'
+version = '1.0.1'
 
 # -- General configuration
 

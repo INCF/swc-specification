@@ -16,6 +16,10 @@ Contact
 ^^^^^^^
 For information about neuromorphological file format’s development and governance, contact nmadmin@gmu.edu
 
+License 
+^^^^^^^
+The SWC file format is licensed under the `Creative Commons Attribution-NoDerivatives 4.0 International License <https://creativecommons.org/licenses/by-nd/4.0/>`_.
+
 Contents
 ^^^^^^^^
 .. toctree::

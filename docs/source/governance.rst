@@ -12,7 +12,7 @@ The SWC format governing board has five members:
 | **2. Allen Institute representative**
 | \ :sup:`A senior representative affiliated with and appointed by the Allen Institute, that has expertise in neuroinformatics as well as microanatomy of neurons and glial cells. The representative communicates the ideas of the Allen Institute for development to the board, but also conveys decisions to concerned stakeholders within the Allen Institute.`\
 | **3. Microanatomy expert**
-| \ :sup:`An expert in neuroscience and microanatomy outside of NeuroMorpho.Org and Allen Institute with long-time experience and insight in the workflow of creating digital reconstructions. Appointed by election.`\
+| \ :sup:`An expert in neuroscience and microanatomy with long-time experience and insight in the workflow of creating digital reconstructions. Appointed by election.`\
 | **4. Computational modeling expert**
 | \ :sup:`An expert in computational neuroscience outside of NeuroMorpho.Org and Allen Institute with long-time experience in computational modeling of neurons using the SWC format. Appointed by election.`\
 | **5. INCF advisor**
