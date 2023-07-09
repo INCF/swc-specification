@@ -28,10 +28,21 @@ Column index Field  Description
 7            Parent Parent sample identifier.
 ============ ====== =================================================
 
-The basic set of types used in NeuroMorpho.org SWC files are: TypeID \|
-Description — \| — 0 \| undefined 1 \| soma 2 \| axon 3 \| (basal)
-dendrite 4 \| apical dendrite 5 \| custom 6 \| unspecified neurite 7 \|
-glia processes
+The basic set of types used in NeuroMorpho.org SWC files are: 
+
+==================== ====== =========================================
+Type                 ID     Description
+==================== ====== =========================================
+undefined            0      Structure type unknown or unspecified
+soma                 1      Soma of a neuron
+axon                 2      Axon of a neuron
+basal dendrite       3      Basal dendrite of a neuron
+apical dendrite      4      Apical dendrite of a neuron
+custom               5      Custom type of cell component
+unspecified neurite  6      An unspecified part of a neuron
+glia processes       7      Glial processes
+custom               >7     Custom type of cell component
+==================== ====== =========================================
 
 Parent defines how points are connected to each other. In a tree,
 multiple points can have the same ParentID. The first point in the file
