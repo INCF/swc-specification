@@ -1,9 +1,10 @@
 swc_specification
 =================
 
-Information about the SWC file specification
+Information about the SWC file specification. A video describing the 
+specification can be found here: https://vimeo.com/853224668?share=copy
 
-Specification of standard SWC - adpated from (3)
+Specification of standard SWC - adapted from (3)
 ------------------------------------------------
 
 An SWC file (S.W.C. encodes for the last names of its initial designers
