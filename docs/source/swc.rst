@@ -171,6 +171,58 @@ required component of SWC:
 |                      | corrections                                  |
 +----------------------+----------------------------------------------+
 
+Recommendations for Optional Inclusion of Ancillary Information
+----------------------------------------------------------------
+Individual researchers may choose to specify additional details in the header
+or footer of the SWC file, see figure below. In particular, the header is 
+most commonly employed to relay metadata information, as originally proposed. 
+Since many of the same metadata elements are frequently employed across studies, 
+we provide here our suggestions based on the most common annotations in use at
+NeuroMorpho.Org. Specifically, one or more lines starting with the “#” sign 
+should convey the following information, if known: the name of the author(s),
+dataset, or lab of origin (#contributor); DOI or full bibliographic citation
+for document describing data (#reference); the animal species and strain or 
+genotype (#creature), sex (#sex), age (#age), and weight (#weight); the 
+anatomical region of the cell body (#region) and the cell type or identifying 
+features (#class); the experimental group (#condition); the labeling or staining 
+(#label); the slicing direction and thickness (#slicing); the objective type and
+magnification (#microscopy); the physical units (#coordinate), reference frame
+(#brainspace), and the tracing software (#original_source). It is important to
+recognize that the above list cannot capture, nor is it always applicable to,
+all essential details of each neuroanatomy study. Moreover, to truly standardize
+metadata it would be necessary to define not only the required fields, but also
+a set of controlled vocabularies to describe the corresponding details. Recent
+developments in machine learning can greatly facilitate this process.
+
+A second opportunity for increasing the applicability of SWC files is to utilize
+the footer to convey information regarding synaptic connectivity. Here we adopt
+the format recently proposed by the fly electron microscopy community. 
+Accordingly, the synaptic connectivity in the SWC file footer should begin with
+a “#start synapse” line and finish with an “#end synapse” line. These delimiters
+are useful to avoid accidentally reading as synapses other cellular information
+that users might want to include in the footer, such as organelle distributions
+or temporal branch dynamics. In between, each line should describe a synaptic
+contact with a “#” sign followed by 9 fields: (i) a unique ID for the detected
+synapse; (ii-iv) the x, y, and z synapse position in coordinate space; (v) the
+node in the SWC file closest to the synapse; (vi) a binary assignment with 0
+indicating an output synapse and 1 indicating an input synapse; (vii) the
+neurite structural domain, e.g., axon vs. dendrite, analogous to the second
+data field (type) in the SWC data file; (viii) a unique identifier for the
+partnering neuron; and (ix) the putative neurotransmitter. Prior to the first
+synapse data line, a line (always starting with “#”) should list the meaning
+of these fields.
+
+The above information could be parsed automatically by suitable connectomics
+analysis platforms. At the same time, because traditional SWC readers interpret
+the “#” as a comment indicator, the proposed header and footer formats ensure
+continuous back-compatibility with legacy software.
+
+.. figure:: Figures/ancillary_info.png
+   :alt: Recommended optional inclusion of ancillary information in SWC Files. a Metadata information included as a header, b Synapse connectivity information in footer.
+
+   Recommended optional inclusion of ancillary information in SWC Files. a Metadata information included as a header, b Synapse connectivity information in footer.
+
+
 References
 ----------
 
